@@ -5,22 +5,23 @@
     <title>Reveal Lagos</title>
     <!-- Section: CSS Link -->
     <link rel="stylesheet" href="style.css">
-    <!-- Section: Font-Awesom Icon Link -->
+    <link rel="stylesheet" href="lightbox.css">
+    <!-- Section: Font-Awesome Icon Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <div class="container">
         <!-- Section: Marquee -->
-        <marquee behavior="sliding" direction="left" width="100%" scrollamount="5">Reveal Lagos</marquee>
+        <marquee behavior="scroll" direction="left" width="100%" scrollamount="5">ReveaLagos</marquee>
 
         <!-- Section NavBar -->
         <header class="header">
-            <h2 class="logo"><a href="#">BCSZN.</a></h2>
+            <h2 class="logo"><a href="#">ReveaLagos</a></h2>
 
             <nav class="navbar">
                 <ul>
-                    <li><a href="#">Men</a></li>
-                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Gallery</a></li>
                     <li><a href="#">Sales</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -28,8 +29,8 @@
 
             <!-- Section: Icon Nav-->
             <div class="icons">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fas fa-search"></i>
+                <i class="fas fa-shopping-cart"></i>
             </div>
 
              <!-- Section: MenuBar-->
@@ -45,8 +46,8 @@
         <div class="img-container">
             <div class="slides">
                 <div class="text-wrapper">
-                    <h1>Summer <span>Collection</span></h1>
-                    <p>Reveal Lagos <span>2.</span></p>
+                    <h1>Revea<span>L</span>agos</h1>
+                    <p>September <span>2023.</span></p>
                 </div>
                 <div class="images">
                     <img src="img/g.webp" alt="model">
@@ -59,17 +60,52 @@
 
         <!-- Section: About -->
         <div class="about">
-            <h3>BCSZN.</h3>
-            <p><span>BCSZN.</span> is a custom-made brand produced in Nigeria, and our primary goal is to include art and turn it into a way of life.</p>
+            <h3>ReveaLagos</h3>
+            <p><span>ReveaLagos</span> is a custom-made brand produced in Nigeria, and our primary goal is to include art and turn it into a way of life.</p>
         </div>
 
-        <!-- Section: Card Content -->
-
+        <!-- Section:Image Gallery -->
+        <div class="gallery-container">
+            <div class="gallery">
+                <a href="img/e.jpg" data-lightbox="models" data-title="Spring Collection">
+                    <img src="img/e.jpg" alt="model">
+                </a>
+                <a href="img/v.webp" data-lightbox="models" data-title="Spring Collection">
+                    <img src="img/v.webp" alt="model">
+                </a>
+                <a href="img/j.jpg" data-lightbox="models" data-title="Spring Collection">
+                    <img src="img/j.jpg" alt="model">
+                </a>
+                <a href="img/m5.jpg" data-lightbox="models" data-title="Spring Collection">
+                    <img src="img/m5.jpg" alt="model">
+                </a>
+                <a href="img/f.jpeg" data-lightbox="models" data-title="Spring Collection">
+                    <img src="img/f.jpeg" alt="model">
+                </a>
+                <a href="img/b1.jpg" data-lightbox="models" data-title="Spring Collection">
+                    <img src="img/b1.jpg" alt="model">
+                </a>
+                <a href="img/l.jpeg" data-lightbox="models" data-title="Spring Collection">
+                    <img src="img/l.jpeg" alt="model">
+                </a>
+                <a href="img/bb.jpeg" data-lightbox="models" data-title="Spring Collection">
+                    <img src="img/bb.jpeg" alt="model">
+                </a>
+                <a href="img/s.webp" data-lightbox="models" data-title="Spring Collection">
+                    <img src="img/s.webp" alt="model">
+                </a>
+                <a href="img/k.webp" data-lightbox="models" data-title="Spring Collection">
+                    <img src="img/k.webp" alt="model">
+                </a>
+            </div>
+        </div>
+        
 
         <!-- <marquee behavior="sliding" direction="right" class="blink"  width="100%" scrollamount="5">New Show Date</marquee> -->
     </div>
 
     <!-- Section: JavsScript Link -->
     <script src="main.js"></script>
+    <script src="lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
