@@ -15,23 +15,17 @@
         <marquee behavior="scroll" direction="left" width="100%" scrollamount="5">ReveaLagos</marquee>
 
         <!-- Section NavBar -->
-        <header class="header">
+        <header class="header" id="header">
             <h2 class="logo"><a href="#">ReveaLagos</a></h2>
 
             <nav class="navbar">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Sales</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-
-            <!-- Section: Icon Nav-->
-            <div class="icons">
-                <i class="fas fa-search"></i>
-                <i class="fas fa-shopping-cart"></i>
-            </div>
 
              <!-- Section: MenuBar-->
             <div class="menubar">
@@ -59,12 +53,15 @@
         </div>
 
         <!-- Section: About -->
-        <div class="about">
-            <h3>ReveaLagos</h3>
+        <div class="about" id="about">
+            <h3>About Us</h3>
             <p><span>ReveaLagos</span> is a custom-made brand produced in Nigeria, and our primary goal is to include art and turn it into a way of life.</p>
         </div>
 
         <!-- Section:Image Gallery -->
+
+       <div id="gallery">
+        <h1 class="gallery-title">Gallery</h1>
         <div class="gallery-container">
             <div class="gallery">
                 <a href="img/e.jpg" data-lightbox="models" data-title="Spring Collection">
@@ -99,9 +96,47 @@
                 </a>
             </div>
         </div>
+       </div>
         
+        <!-- Section: Contact -->
+        <div class="contact" id="contact">
+            <h1>Contact Us</h1>
+            <p>Let's have a Talk.</p>
+            <form action="">
+                <div class="form-content">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-content">
+                    <label for="name">Name</label>
+                    <input type="name" name="name" id="name">
+                </div>
+                <div class="form-content">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="" cols="30" rows="5"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </div>
 
-        <!-- <marquee behavior="sliding" direction="right" class="blink"  width="100%" scrollamount="5">New Show Date</marquee> -->
+            </form>
+        </div>
+
+        <div class="backtotop">
+            <button id="back-to-top" title="Back to Top"><i class="fa-solid fa-chevron-up"></i></button>
+        </div>
+
+        <!-- section: Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p><span>ReveaLagos.</span> &copy; 2023 All rights reserved</p>
+                <div class="footer-icon">
+                    <a href="https://www.instagram.com/reveallagos/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-threads"></i></a>
+                    <a href="Reveallagos@gmail.com"><i class="fa-brands fa-google"></i></a>
+                    
+                </div>
+            </div>
+        </footer>
+
     </div>
 
     <!-- Section: JavsScript Link -->

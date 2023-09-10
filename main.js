@@ -26,3 +26,24 @@ menuBar.addEventListener("click", () => {
     navLinks.classList.toggle('active');
     menuBar.classList.toggle('active');
 });
+
+
+// Back to Top 
+
+const backToTopButton = document.getElementById("back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.addEventListener("scroll", () => {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTopButton.style.display = "block";
+    } else {
+        backToTopButton.style.display = "none";
+    }
+});
+
+// Scroll to the top of the document when the button is clicked
+backToTopButton.addEventListener("click", () => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+});
+
