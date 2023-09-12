@@ -14,7 +14,7 @@ function automaticSlide() {
         }
 
         images[currentImage].style.display = "block";
-        setTimeout(automaticSlide, 5000); // Change image every 5 seconds
+        setTimeout(automaticSlide, 3000); // Change image every 3 seconds
     }
 automaticSlide(); // Start the automatic slideshow
     
@@ -46,4 +46,23 @@ backToTopButton.addEventListener("click", () => {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
 });
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwmrjDYL2R-P0sTkr4cWxjprDPE_BblT7fUiD5plKfQZXrBS5RsmiDzYRX5Pn98nGwd/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const messages = document.getElementById("messages")
+
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            messages.innerHTML = "Message sent successfully"
+            setTimeout(function() {
+                messages.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+
 

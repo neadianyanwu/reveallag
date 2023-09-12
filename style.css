@@ -216,72 +216,21 @@ marquee {
 }
 
 /* Section: Contact Us */
-.contact {
-    margin-top: 30px;
+.contact-container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
 }
 
-.contact h1 {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    font-size: 45px;
-    margin-top: 50px;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-bottom: 10px;
+#contact {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 2%;
 }
 
-.contact p {
-    margin-bottom: 2rem;
-    text-align: center;
-    /* display: flex;
-    justify-content: center; */
+#contact .contact-container h2 {
+    
 }
-
-.form-content {
-    margin-bottom: 1.5rem;
-    margin-left: 20%;
-}
-
-.form-content input, .form-content textarea {
-    width: 70%;
-    padding: 10px;
-    border: 1px solid #3c87ac;
-    border-radius: 5px;
-    text-align: center;
-    justify-content: flex-start;
-    display: flex;
-    outline: none;
-}
-
-.form-content textarea {
-    resize: vertical;
-    min-height: 150px;
-}
-
-.form-content input:focus, .form-content textarea:focus {
-    border-color: 6px solid#3c87ac;
-    box-shadow: 0 10px 20px rgba(75, 103, 194, 0.5);
-}
-
-.form-content .btn {
-    margin-top: 10px;
-    background: #65adc5;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 18px;
-    text-align: center;
-    border: none;
-    outline: none;
-    color: #4b4a37;
-}
-
-.form-content .btn:hover {
-    background: #ecf6fb;
-    color: #a6bace;
-}
-
 
 /* Section: Back to Top */
 .backtotop {
